@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_info_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardInfoRelativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Contact name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:id="@+id/cardInfoName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="064000000"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:id="@+id/cardInfoDetail"
+            android:layout_below="@+id/cardInfoName"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

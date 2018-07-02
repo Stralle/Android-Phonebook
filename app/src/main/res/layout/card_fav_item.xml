@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_fav_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="5dp"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardFavRelativeLayout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:maxHeight="80dp"
+            android:maxWidth="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardFavImage"
+            android:src="@drawable/ic_person1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact name"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:id="@+id/cardFavName"
+            android:layout_toRightOf="@id/cardFavImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="064000000"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:id="@+id/cardFavContact"
+            android:layout_below="@+id/cardFavName"
+            android:layout_toRightOf="@+id/cardFavImage"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+<!--
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_fav_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardFavRelativeLayout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardFavImage"
+            android:src="@drawable/ic_person1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact name"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:id="@+id/cardFavName"
+            android:layout_toRightOf="@id/cardFavImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="064000000"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:id="@+id/cardFavContact"
+            android:layout_below="@+id/cardFavName"
+            android:layout_toRightOf="@+id/cardFavImage"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+-->
